@@ -17,11 +17,11 @@ public class Main {
 			System.out.println("'"+str+"' contains '"+wordToFind+"' ? : "+str.contains(wordToFind));
 			System.out.println("------------------------------------");
 			StringBuffer buffer1 = new StringBuffer();
-			System.out.println("Capacity : "+buffer1.capacity());
-			System.out.println("Length : "+buffer1.length());
+			System.out.println("Capacity of Default Buffer: "+buffer1.capacity());
+			System.out.println("Length of Default Buffer: "+buffer1.length());
 			StringBuffer buffer = new StringBuffer(str);
-			System.out.println("Capacity : "+buffer.capacity());
-			System.out.println("Length : "+buffer.length());
+			System.out.println("Capacity of Buffer of str: "+buffer.capacity());
+			System.out.println("Length of Buffer of str: "+buffer.length());
 			buffer.reverse();
 			System.out.println("Reverse : "+buffer); //Buffers are mutable
     }
