@@ -15,5 +15,14 @@ public class Main {
 			//Checking if a word is present
 			String wordToFind = "Welcome";
 			System.out.println("'"+str+"' contains '"+wordToFind+"' ? : "+str.contains(wordToFind));
+			System.out.println("------------------------------------");
+			StringBuffer buffer1 = new StringBuffer();
+			System.out.println("Capacity : "+buffer1.capacity());
+			System.out.println("Length : "+buffer1.length());
+			StringBuffer buffer = new StringBuffer(str);
+			System.out.println("Capacity : "+buffer.capacity());
+			System.out.println("Length : "+buffer.length());
+			buffer.reverse();
+			System.out.println("Reverse : "+buffer); //Buffers are mutable
     }
 }
