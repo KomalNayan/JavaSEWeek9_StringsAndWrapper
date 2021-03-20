@@ -24,5 +24,16 @@ public class Main {
 			System.out.println("Length of Buffer of str: "+buffer.length());
 			buffer.reverse();
 			System.out.println("Reverse : "+buffer); //Buffers are mutable
+			buffer.reverse(); //Back to Original
+		    buffer1 = buffer;
+		    buffer1.append(" Toronto");
+			System.out.println("Buffer1 after appending Toronto : "+buffer1);
+
+			buffer.append(100);
+			System.out.println("Buffer after appending 100 : "+buffer);
+
+			int indexToronto = buffer1.indexOf(" Toronto");
+			buffer1.replace(indexToronto,buffer1.length(),", Toronto");
+			System.out.println("After Replacement : "+buffer1);
     }
 }
